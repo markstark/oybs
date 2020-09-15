@@ -1,0 +1,569 @@
+{
+  "name": "InventoryActivity",
+  "fields": [
+    {
+      "fieldName": "vendorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cAccountKeyDay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxDay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toolId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenterId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccKeyMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lotNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccGccKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccAccountKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxYear",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccKeyDay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "levelTwoRestrict",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "showCpmTab",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountedAmount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountingDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountingEntryStatusCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "allMoves",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cAccountKeyDayTemp2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cAccountKeyMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cashNoncash",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ccKeyDayMoves",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenterDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdById",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currencyCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dataType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "depreciation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "detailOrg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enteredAmount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gccAccountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glPostedDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glTransferStatusCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isDept",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeBatchName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeLineDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeLineNum",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "keyDayMoves",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "levelAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moveOrderLineNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moveOrderNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moves",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naturalAccountName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "organizationCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partNumberDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "periodName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poItemCategory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poLineNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "servicecontract",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "spreadsheet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subGccAccountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summaryAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summaryOrg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionCost",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionQuantity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionTypeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionUom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxNaturalAcct",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxQuarter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uniqueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "finalMoves",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jan",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "feb",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "apr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "may",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jun",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jul",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "aug",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sep",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oct",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nov",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dec",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountDescr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenterDescr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalYtdActual",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalYtdBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vendorNameKit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supClassKit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "item",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "itemDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountingLineType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryQuantity",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryUom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "account",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "baseTransactionValue",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "movesMonthlyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "movesDailyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenterName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stationFamily",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountedAmountFcstMl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isFutureCostMaskLayer",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "month",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "engWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prdWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "devWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otherWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eng",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prd",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dev",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "other",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "engMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prdMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "devMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "otherMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numberOfDays",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mlMonthlyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mlDailyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "monthlyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dailyBudget",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplierClassification",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplierPn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "subInventory",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moReference",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "documentHeader",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "owningParty",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lotGrade",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deptUse",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "brfNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "handlingCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "handlingReason",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200915022611",
+  "entityTableName": "inventory_activity",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
