@@ -1,0 +1,37 @@
+{
+  "name": "Inventor",
+  "fields": [
+    {
+      "fieldName": "vendorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxDay",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxMonth",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toolId",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20200915142540",
+  "entityTableName": "inventor",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

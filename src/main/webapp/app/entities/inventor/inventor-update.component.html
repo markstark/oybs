@@ -1,0 +1,56 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-inventor-heading">Create or edit a Inventor</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_vendorName">Vendor Name</label>
+                    <input type="text" class="form-control" name="vendorName" id="field_vendorName"
+                           formControlName="vendorName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxDay">Trx Day</label>
+                    <input type="text" class="form-control" name="trxDay" id="field_trxDay"
+                           formControlName="trxDay"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxMonth">Trx Month</label>
+                    <input type="text" class="form-control" name="trxMonth" id="field_trxMonth"
+                           formControlName="trxMonth"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxWeek">Trx Week</label>
+                    <input type="text" class="form-control" name="trxWeek" id="field_trxWeek"
+                           formControlName="trxWeek"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_toolId">Tool Id</label>
+                    <input type="text" class="form-control" name="toolId" id="field_toolId"
+                           formControlName="toolId"/>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
