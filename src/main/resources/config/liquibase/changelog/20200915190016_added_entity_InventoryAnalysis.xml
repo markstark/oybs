@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    
+    <!--
+        Added the entity InventoryAnalysis.
+    -->
+    <changeSet id="20200915190016-1" author="jhipster">
+        <createTable tableName="inventory_analysis">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="detail_org" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="accounting_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_week" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_typ" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cost_group" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mo_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="part_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="tool_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="station_family" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_qty" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_uom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="unit_cost" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="accounted_amt" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="part_descr" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="natural_account" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="vendor_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="supplier_classification" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gl_line_descr" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="summary_org" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cost_center_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="cost_center" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="summary_account" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="parent_account" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="account_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="created_by" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="org_code" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="lot_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="po_item_cat" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="mo_line_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="po_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="po_line_no" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="je_batch_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="je_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="je_line_no" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_acc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_natural_acc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gl_acc" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="currency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="entered_amt" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="source" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="period" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="trx_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="unique_id" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="entity_review" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="part_lifetime" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="part_fixed_problem" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="return_to_stores" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="repeat_fail" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="warranty_claim" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="submit_for_warranty" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="repairable_part" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="submit_for_repair" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="part_sourcing" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="comment_followup" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="followup_complete" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20200915190016-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20200915190016-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/inventory_analysis.csv"
+                  separator=";"
+                  tableName="inventory_analysis">
+            <column name="id" type="numeric"/>
+            <column name="detail_org" type="string"/>
+            <column name="accounting_date" type="date"/>
+            <column name="trx_week" type="string"/>
+            <column name="trx_typ" type="string"/>
+            <column name="cost_group" type="string"/>
+            <column name="mo_no" type="string"/>
+            <column name="part_no" type="string"/>
+            <column name="tool_id" type="string"/>
+            <column name="station_family" type="string"/>
+            <column name="trx_qty" type="numeric"/>
+            <column name="trx_uom" type="string"/>
+            <column name="unit_cost" type="string"/>
+            <column name="accounted_amt" type="string"/>
+            <column name="part_descr" type="string"/>
+            <column name="natural_account" type="string"/>
+            <column name="vendor_name" type="string"/>
+            <column name="supplier_classification" type="string"/>
+            <column name="description" type="string"/>
+            <column name="gl_line_descr" type="string"/>
+            <column name="summary_org" type="string"/>
+            <column name="cost_center_id" type="string"/>
+            <column name="cost_center" type="string"/>
+            <column name="summary_account" type="string"/>
+            <column name="parent_account" type="string"/>
+            <column name="account_id" type="string"/>
+            <column name="trx_date" type="date"/>
+            <column name="created_by" type="string"/>
+            <column name="org_code" type="string"/>
+            <column name="lot_no" type="string"/>
+            <column name="po_item_cat" type="string"/>
+            <column name="mo_line_no" type="numeric"/>
+            <column name="po_no" type="string"/>
+            <column name="po_line_no" type="string"/>
+            <column name="je_batch_name" type="string"/>
+            <column name="je_name" type="string"/>
+            <column name="je_line_no" type="numeric"/>
+            <column name="trx_acc" type="string"/>
+            <column name="trx_natural_acc" type="string"/>
+            <column name="gl_acc" type="string"/>
+            <column name="currency" type="string"/>
+            <column name="entered_amt" type="string"/>
+            <column name="source" type="string"/>
+            <column name="period" type="string"/>
+            <column name="trx_id" type="string"/>
+            <column name="unique_id" type="string"/>
+            <column name="entity_review" type="string"/>
+            <column name="part_lifetime" type="string"/>
+            <column name="part_fixed_problem" type="string"/>
+            <column name="return_to_stores" type="string"/>
+            <column name="repeat_fail" type="string"/>
+            <column name="warranty_claim" type="string"/>
+            <column name="submit_for_warranty" type="string"/>
+            <column name="repairable_part" type="string"/>
+            <column name="submit_for_repair" type="string"/>
+            <column name="part_sourcing" type="string"/>
+            <column name="comment_followup" type="string"/>
+            <column name="followup_complete" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

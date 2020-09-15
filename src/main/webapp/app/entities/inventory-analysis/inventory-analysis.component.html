@@ -1,0 +1,177 @@
+<div>
+    <h2 id="page-heading">
+        <span>Inventory Analyses</span>
+
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-inventory-analysis" [routerLink]="['/inventory-analysis/new']">
+            <fa-icon icon="plus"></fa-icon>
+            <span>
+            Create a new Inventory Analysis
+            </span>
+        </button>
+    </h2>
+
+    <jhi-alert-error></jhi-alert-error>
+
+    <jhi-alert></jhi-alert>
+
+    <div class="alert alert-warning" id="no-result" *ngIf="inventoryAnalyses?.length === 0">
+        <span>No inventoryAnalyses found</span>
+    </div>
+
+    <div class="table-responsive" id="entities" *ngIf="inventoryAnalyses && inventoryAnalyses.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+                <tr>
+                    <th scope="col" ><span>ID</span></th>
+                    <th scope="col" ><span>Detail Org</span></th>
+                    <th scope="col" ><span>Accounting Date</span></th>
+                    <th scope="col" ><span>Trx Week</span></th>
+                    <th scope="col" ><span>Trx Typ</span></th>
+                    <th scope="col" ><span>Cost Group</span></th>
+                    <th scope="col" ><span>Mo No</span></th>
+                    <th scope="col" ><span>Part No</span></th>
+                    <th scope="col" ><span>Tool Id</span></th>
+                    <th scope="col" ><span>Station Family</span></th>
+                    <th scope="col" ><span>Trx Qty</span></th>
+                    <th scope="col" ><span>Trx Uom</span></th>
+                    <th scope="col" ><span>Unit Cost</span></th>
+                    <th scope="col" ><span>Accounted Amt</span></th>
+                    <th scope="col" ><span>Part Descr</span></th>
+                    <th scope="col" ><span>Natural Account</span></th>
+                    <th scope="col" ><span>Vendor Name</span></th>
+                    <th scope="col" ><span>Supplier Classification</span></th>
+                    <th scope="col" ><span>Description</span></th>
+                    <th scope="col" ><span>Gl Line Descr</span></th>
+                    <th scope="col" ><span>Summary Org</span></th>
+                    <th scope="col" ><span>Cost Center Id</span></th>
+                    <th scope="col" ><span>Cost Center</span></th>
+                    <th scope="col" ><span>Summary Account</span></th>
+                    <th scope="col" ><span>Parent Account</span></th>
+                    <th scope="col" ><span>Account Id</span></th>
+                    <th scope="col" ><span>Trx Date</span></th>
+                    <th scope="col" ><span>Created By</span></th>
+                    <th scope="col" ><span>Org Code</span></th>
+                    <th scope="col" ><span>Lot No</span></th>
+                    <th scope="col" ><span>Po Item Cat</span></th>
+                    <th scope="col" ><span>Mo Line No</span></th>
+                    <th scope="col" ><span>Po No</span></th>
+                    <th scope="col" ><span>Po Line No</span></th>
+                    <th scope="col" ><span>Je Batch Name</span></th>
+                    <th scope="col" ><span>Je Name</span></th>
+                    <th scope="col" ><span>Je Line No</span></th>
+                    <th scope="col" ><span>Trx Acc</span></th>
+                    <th scope="col" ><span>Trx Natural Acc</span></th>
+                    <th scope="col" ><span>Gl Acc</span></th>
+                    <th scope="col" ><span>Currency</span></th>
+                    <th scope="col" ><span>Entered Amt</span></th>
+                    <th scope="col" ><span>Source</span></th>
+                    <th scope="col" ><span>Period</span></th>
+                    <th scope="col" ><span>Trx Id</span></th>
+                    <th scope="col" ><span>Unique Id</span></th>
+                    <th scope="col" ><span>Entity Review</span></th>
+                    <th scope="col" ><span>Part Lifetime</span></th>
+                    <th scope="col" ><span>Part Fixed Problem</span></th>
+                    <th scope="col" ><span>Return To Stores</span></th>
+                    <th scope="col" ><span>Repeat Fail</span></th>
+                    <th scope="col" ><span>Warranty Claim</span></th>
+                    <th scope="col" ><span>Submit For Warranty</span></th>
+                    <th scope="col" ><span>Repairable Part</span></th>
+                    <th scope="col" ><span>Submit For Repair</span></th>
+                    <th scope="col" ><span>Part Sourcing</span></th>
+                    <th scope="col" ><span>Comment Followup</span></th>
+                    <th scope="col" ><span>Followup Complete</span></th>
+                    <th scope="col" ><span>User</span></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let inventoryAnalysis of inventoryAnalyses ;trackBy: trackId">
+                    <td><a [routerLink]="['/inventory-analysis', inventoryAnalysis.id, 'view']">{{ inventoryAnalysis.id }}</a></td>
+                    <td>{{ inventoryAnalysis.detailOrg }}</td>
+                    <td>{{ inventoryAnalysis.accountingDate | date:'mediumDate' }}</td>
+                    <td>{{ inventoryAnalysis.trxWeek }}</td>
+                    <td>{{ inventoryAnalysis.trxTyp }}</td>
+                    <td>{{ inventoryAnalysis.costGroup }}</td>
+                    <td>{{ inventoryAnalysis.moNo }}</td>
+                    <td>{{ inventoryAnalysis.partNo }}</td>
+                    <td>{{ inventoryAnalysis.toolId }}</td>
+                    <td>{{ inventoryAnalysis.stationFamily }}</td>
+                    <td>{{ inventoryAnalysis.trxQty }}</td>
+                    <td>{{ inventoryAnalysis.trxUom }}</td>
+                    <td>{{ inventoryAnalysis.unitCost }}</td>
+                    <td>{{ inventoryAnalysis.accountedAmt }}</td>
+                    <td>{{ inventoryAnalysis.partDescr }}</td>
+                    <td>{{ inventoryAnalysis.naturalAccount }}</td>
+                    <td>{{ inventoryAnalysis.vendorName }}</td>
+                    <td>{{ inventoryAnalysis.supplierClassification }}</td>
+                    <td>{{ inventoryAnalysis.description }}</td>
+                    <td>{{ inventoryAnalysis.glLineDescr }}</td>
+                    <td>{{ inventoryAnalysis.summaryOrg }}</td>
+                    <td>{{ inventoryAnalysis.costCenterId }}</td>
+                    <td>{{ inventoryAnalysis.costCenter }}</td>
+                    <td>{{ inventoryAnalysis.summaryAccount }}</td>
+                    <td>{{ inventoryAnalysis.parentAccount }}</td>
+                    <td>{{ inventoryAnalysis.accountId }}</td>
+                    <td>{{ inventoryAnalysis.trxDate | date:'mediumDate' }}</td>
+                    <td>{{ inventoryAnalysis.createdBy }}</td>
+                    <td>{{ inventoryAnalysis.orgCode }}</td>
+                    <td>{{ inventoryAnalysis.lotNo }}</td>
+                    <td>{{ inventoryAnalysis.poItemCat }}</td>
+                    <td>{{ inventoryAnalysis.moLineNo }}</td>
+                    <td>{{ inventoryAnalysis.poNo }}</td>
+                    <td>{{ inventoryAnalysis.poLineNo }}</td>
+                    <td>{{ inventoryAnalysis.jeBatchName }}</td>
+                    <td>{{ inventoryAnalysis.jeName }}</td>
+                    <td>{{ inventoryAnalysis.jeLineNo }}</td>
+                    <td>{{ inventoryAnalysis.trxAcc }}</td>
+                    <td>{{ inventoryAnalysis.trxNaturalAcc }}</td>
+                    <td>{{ inventoryAnalysis.glAcc }}</td>
+                    <td>{{ inventoryAnalysis.currency }}</td>
+                    <td>{{ inventoryAnalysis.enteredAmt }}</td>
+                    <td>{{ inventoryAnalysis.source }}</td>
+                    <td>{{ inventoryAnalysis.period }}</td>
+                    <td>{{ inventoryAnalysis.trxId }}</td>
+                    <td>{{ inventoryAnalysis.uniqueId }}</td>
+                    <td>{{ inventoryAnalysis.entityReview }}</td>
+                    <td>{{ inventoryAnalysis.partLifetime }}</td>
+                    <td>{{ inventoryAnalysis.partFixedProblem }}</td>
+                    <td>{{ inventoryAnalysis.returnToStores }}</td>
+                    <td>{{ inventoryAnalysis.repeatFail }}</td>
+                    <td>{{ inventoryAnalysis.warrantyClaim }}</td>
+                    <td>{{ inventoryAnalysis.submitForWarranty }}</td>
+                    <td>{{ inventoryAnalysis.repairablePart }}</td>
+                    <td>{{ inventoryAnalysis.submitForRepair }}</td>
+                    <td>{{ inventoryAnalysis.partSourcing }}</td>
+                    <td>{{ inventoryAnalysis.commentFollowup }}</td>
+                    <td>{{ inventoryAnalysis.followupComplete }}</td>
+                    <td>
+                        {{ inventoryAnalysis.user?.login }}
+                    </td>
+                    <td class="text-right">
+                        <div class="btn-group">
+                            <button type="submit"
+                                    [routerLink]="['/inventory-analysis', inventoryAnalysis.id, 'view']"
+                                    class="btn btn-info btn-sm">
+                                <fa-icon icon="eye"></fa-icon>
+                                <span class="d-none d-md-inline">View</span>
+                            </button>
+
+                            <button type="submit"
+                                    [routerLink]="['/inventory-analysis', inventoryAnalysis.id, 'edit']"
+                                    class="btn btn-primary btn-sm">
+                                <fa-icon icon="pencil-alt"></fa-icon>
+                                <span class="d-none d-md-inline">Edit</span>
+                            </button>
+
+                            <button type="submit" (click)="delete(inventoryAnalysis)"
+                                    class="btn btn-danger btn-sm">
+                                <fa-icon icon="times"></fa-icon>
+                                <span class="d-none d-md-inline">Delete</span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

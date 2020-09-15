@@ -1,0 +1,258 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="inventoryAnalysis">
+            <h2><span>Inventory Analysis</span> {{ inventoryAnalysis.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Detail Org</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.detailOrg }}</span>
+                </dd>
+                <dt><span>Accounting Date</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.accountingDate }}</span>
+                </dd>
+                <dt><span>Trx Week</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxWeek }}</span>
+                </dd>
+                <dt><span>Trx Typ</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxTyp }}</span>
+                </dd>
+                <dt><span>Cost Group</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.costGroup }}</span>
+                </dd>
+                <dt><span>Mo No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.moNo }}</span>
+                </dd>
+                <dt><span>Part No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.partNo }}</span>
+                </dd>
+                <dt><span>Tool Id</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.toolId }}</span>
+                </dd>
+                <dt><span>Station Family</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.stationFamily }}</span>
+                </dd>
+                <dt><span>Trx Qty</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxQty }}</span>
+                </dd>
+                <dt><span>Trx Uom</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxUom }}</span>
+                </dd>
+                <dt><span>Unit Cost</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.unitCost }}</span>
+                </dd>
+                <dt><span>Accounted Amt</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.accountedAmt }}</span>
+                </dd>
+                <dt><span>Part Descr</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.partDescr }}</span>
+                </dd>
+                <dt><span>Natural Account</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.naturalAccount }}</span>
+                </dd>
+                <dt><span>Vendor Name</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.vendorName }}</span>
+                </dd>
+                <dt><span>Supplier Classification</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.supplierClassification }}</span>
+                </dd>
+                <dt><span>Description</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.description }}</span>
+                </dd>
+                <dt><span>Gl Line Descr</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.glLineDescr }}</span>
+                </dd>
+                <dt><span>Summary Org</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.summaryOrg }}</span>
+                </dd>
+                <dt><span>Cost Center Id</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.costCenterId }}</span>
+                </dd>
+                <dt><span>Cost Center</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.costCenter }}</span>
+                </dd>
+                <dt><span>Summary Account</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.summaryAccount }}</span>
+                </dd>
+                <dt><span>Parent Account</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.parentAccount }}</span>
+                </dd>
+                <dt><span>Account Id</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.accountId }}</span>
+                </dd>
+                <dt><span>Trx Date</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxDate }}</span>
+                </dd>
+                <dt><span>Created By</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.createdBy }}</span>
+                </dd>
+                <dt><span>Org Code</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.orgCode }}</span>
+                </dd>
+                <dt><span>Lot No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.lotNo }}</span>
+                </dd>
+                <dt><span>Po Item Cat</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.poItemCat }}</span>
+                </dd>
+                <dt><span>Mo Line No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.moLineNo }}</span>
+                </dd>
+                <dt><span>Po No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.poNo }}</span>
+                </dd>
+                <dt><span>Po Line No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.poLineNo }}</span>
+                </dd>
+                <dt><span>Je Batch Name</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.jeBatchName }}</span>
+                </dd>
+                <dt><span>Je Name</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.jeName }}</span>
+                </dd>
+                <dt><span>Je Line No</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.jeLineNo }}</span>
+                </dd>
+                <dt><span>Trx Acc</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxAcc }}</span>
+                </dd>
+                <dt><span>Trx Natural Acc</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxNaturalAcc }}</span>
+                </dd>
+                <dt><span>Gl Acc</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.glAcc }}</span>
+                </dd>
+                <dt><span>Currency</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.currency }}</span>
+                </dd>
+                <dt><span>Entered Amt</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.enteredAmt }}</span>
+                </dd>
+                <dt><span>Source</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.source }}</span>
+                </dd>
+                <dt><span>Period</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.period }}</span>
+                </dd>
+                <dt><span>Trx Id</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.trxId }}</span>
+                </dd>
+                <dt><span>Unique Id</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.uniqueId }}</span>
+                </dd>
+                <dt><span>Entity Review</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.entityReview }}</span>
+                </dd>
+                <dt><span>Part Lifetime</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.partLifetime }}</span>
+                </dd>
+                <dt><span>Part Fixed Problem</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.partFixedProblem }}</span>
+                </dd>
+                <dt><span>Return To Stores</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.returnToStores }}</span>
+                </dd>
+                <dt><span>Repeat Fail</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.repeatFail }}</span>
+                </dd>
+                <dt><span>Warranty Claim</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.warrantyClaim }}</span>
+                </dd>
+                <dt><span>Submit For Warranty</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.submitForWarranty }}</span>
+                </dd>
+                <dt><span>Repairable Part</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.repairablePart }}</span>
+                </dd>
+                <dt><span>Submit For Repair</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.submitForRepair }}</span>
+                </dd>
+                <dt><span>Part Sourcing</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.partSourcing }}</span>
+                </dd>
+                <dt><span>Comment Followup</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.commentFollowup }}</span>
+                </dd>
+                <dt><span>Followup Complete</span></dt>
+                <dd>
+                    <span>{{ inventoryAnalysis.followupComplete }}</span>
+                </dd>
+                <dt><span>User</span></dt>
+                <dd>
+                    {{ inventoryAnalysis.user?.login }}
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/inventory-analysis', inventoryAnalysis.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
