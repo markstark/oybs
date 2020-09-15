@@ -1,0 +1,384 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-inventory-analysis-heading">Create or edit a Inventory Analysis</h2>
+
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+
+                <div class="form-group" [hidden]="!editForm.get('id')!.value">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id" readonly />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_detailOrg">Detail Org</label>
+                    <input type="text" class="form-control" name="detailOrg" id="field_detailOrg"
+                           formControlName="detailOrg"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_accountingDate">Accounting Date</label>
+                    <div class="input-group">
+                        <input id="field_accountingDate" type="text" class="form-control" name="accountingDate" ngbDatepicker #accountingDateDp="ngbDatepicker" formControlName="accountingDate"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="accountingDateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxWeek">Trx Week</label>
+                    <input type="text" class="form-control" name="trxWeek" id="field_trxWeek"
+                           formControlName="trxWeek"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxTyp">Trx Typ</label>
+                    <input type="text" class="form-control" name="trxTyp" id="field_trxTyp"
+                           formControlName="trxTyp"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_costGroup">Cost Group</label>
+                    <input type="text" class="form-control" name="costGroup" id="field_costGroup"
+                           formControlName="costGroup"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_moNo">Mo No</label>
+                    <input type="text" class="form-control" name="moNo" id="field_moNo"
+                           formControlName="moNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_partNo">Part No</label>
+                    <input type="text" class="form-control" name="partNo" id="field_partNo"
+                           formControlName="partNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_toolId">Tool Id</label>
+                    <input type="text" class="form-control" name="toolId" id="field_toolId"
+                           formControlName="toolId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_stationFamily">Station Family</label>
+                    <input type="text" class="form-control" name="stationFamily" id="field_stationFamily"
+                           formControlName="stationFamily"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxQty">Trx Qty</label>
+                    <input type="number" class="form-control" name="trxQty" id="field_trxQty"
+                           formControlName="trxQty"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxUom">Trx Uom</label>
+                    <input type="text" class="form-control" name="trxUom" id="field_trxUom"
+                           formControlName="trxUom"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_unitCost">Unit Cost</label>
+                    <input type="text" class="form-control" name="unitCost" id="field_unitCost"
+                           formControlName="unitCost"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_accountedAmt">Accounted Amt</label>
+                    <input type="text" class="form-control" name="accountedAmt" id="field_accountedAmt"
+                           formControlName="accountedAmt"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_partDescr">Part Descr</label>
+                    <input type="text" class="form-control" name="partDescr" id="field_partDescr"
+                           formControlName="partDescr"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_naturalAccount">Natural Account</label>
+                    <input type="text" class="form-control" name="naturalAccount" id="field_naturalAccount"
+                           formControlName="naturalAccount"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_vendorName">Vendor Name</label>
+                    <input type="text" class="form-control" name="vendorName" id="field_vendorName"
+                           formControlName="vendorName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_supplierClassification">Supplier Classification</label>
+                    <input type="text" class="form-control" name="supplierClassification" id="field_supplierClassification"
+                           formControlName="supplierClassification"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_description">Description</label>
+                    <input type="text" class="form-control" name="description" id="field_description"
+                           formControlName="description"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_glLineDescr">Gl Line Descr</label>
+                    <input type="text" class="form-control" name="glLineDescr" id="field_glLineDescr"
+                           formControlName="glLineDescr"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_summaryOrg">Summary Org</label>
+                    <input type="text" class="form-control" name="summaryOrg" id="field_summaryOrg"
+                           formControlName="summaryOrg"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_costCenterId">Cost Center Id</label>
+                    <input type="text" class="form-control" name="costCenterId" id="field_costCenterId"
+                           formControlName="costCenterId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_costCenter">Cost Center</label>
+                    <input type="text" class="form-control" name="costCenter" id="field_costCenter"
+                           formControlName="costCenter"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_summaryAccount">Summary Account</label>
+                    <input type="text" class="form-control" name="summaryAccount" id="field_summaryAccount"
+                           formControlName="summaryAccount"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_parentAccount">Parent Account</label>
+                    <input type="text" class="form-control" name="parentAccount" id="field_parentAccount"
+                           formControlName="parentAccount"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_accountId">Account Id</label>
+                    <input type="text" class="form-control" name="accountId" id="field_accountId"
+                           formControlName="accountId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxDate">Trx Date</label>
+                    <div class="input-group">
+                        <input id="field_trxDate" type="text" class="form-control" name="trxDate" ngbDatepicker #trxDateDp="ngbDatepicker" formControlName="trxDate"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="trxDateDp.toggle()"><fa-icon icon="calendar-alt"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_createdBy">Created By</label>
+                    <input type="text" class="form-control" name="createdBy" id="field_createdBy"
+                           formControlName="createdBy"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_orgCode">Org Code</label>
+                    <input type="text" class="form-control" name="orgCode" id="field_orgCode"
+                           formControlName="orgCode"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_lotNo">Lot No</label>
+                    <input type="text" class="form-control" name="lotNo" id="field_lotNo"
+                           formControlName="lotNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_poItemCat">Po Item Cat</label>
+                    <input type="text" class="form-control" name="poItemCat" id="field_poItemCat"
+                           formControlName="poItemCat"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_moLineNo">Mo Line No</label>
+                    <input type="number" class="form-control" name="moLineNo" id="field_moLineNo"
+                           formControlName="moLineNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_poNo">Po No</label>
+                    <input type="text" class="form-control" name="poNo" id="field_poNo"
+                           formControlName="poNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_poLineNo">Po Line No</label>
+                    <input type="text" class="form-control" name="poLineNo" id="field_poLineNo"
+                           formControlName="poLineNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_jeBatchName">Je Batch Name</label>
+                    <input type="text" class="form-control" name="jeBatchName" id="field_jeBatchName"
+                           formControlName="jeBatchName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_jeName">Je Name</label>
+                    <input type="text" class="form-control" name="jeName" id="field_jeName"
+                           formControlName="jeName"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_jeLineNo">Je Line No</label>
+                    <input type="number" class="form-control" name="jeLineNo" id="field_jeLineNo"
+                           formControlName="jeLineNo"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxAcc">Trx Acc</label>
+                    <input type="text" class="form-control" name="trxAcc" id="field_trxAcc"
+                           formControlName="trxAcc"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxNaturalAcc">Trx Natural Acc</label>
+                    <input type="text" class="form-control" name="trxNaturalAcc" id="field_trxNaturalAcc"
+                           formControlName="trxNaturalAcc"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_glAcc">Gl Acc</label>
+                    <input type="text" class="form-control" name="glAcc" id="field_glAcc"
+                           formControlName="glAcc"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_currency">Currency</label>
+                    <input type="text" class="form-control" name="currency" id="field_currency"
+                           formControlName="currency"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_enteredAmt">Entered Amt</label>
+                    <input type="text" class="form-control" name="enteredAmt" id="field_enteredAmt"
+                           formControlName="enteredAmt"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_source">Source</label>
+                    <input type="text" class="form-control" name="source" id="field_source"
+                           formControlName="source"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_period">Period</label>
+                    <input type="text" class="form-control" name="period" id="field_period"
+                           formControlName="period"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_trxId">Trx Id</label>
+                    <input type="text" class="form-control" name="trxId" id="field_trxId"
+                           formControlName="trxId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_uniqueId">Unique Id</label>
+                    <input type="text" class="form-control" name="uniqueId" id="field_uniqueId"
+                           formControlName="uniqueId"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_entityReview">Entity Review</label>
+                    <input type="text" class="form-control" name="entityReview" id="field_entityReview"
+                           formControlName="entityReview"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_partLifetime">Part Lifetime</label>
+                    <input type="text" class="form-control" name="partLifetime" id="field_partLifetime"
+                           formControlName="partLifetime"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_partFixedProblem">Part Fixed Problem</label>
+                    <input type="text" class="form-control" name="partFixedProblem" id="field_partFixedProblem"
+                           formControlName="partFixedProblem"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_returnToStores">Return To Stores</label>
+                    <input type="text" class="form-control" name="returnToStores" id="field_returnToStores"
+                           formControlName="returnToStores"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_repeatFail">Repeat Fail</label>
+                    <input type="text" class="form-control" name="repeatFail" id="field_repeatFail"
+                           formControlName="repeatFail"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_warrantyClaim">Warranty Claim</label>
+                    <input type="text" class="form-control" name="warrantyClaim" id="field_warrantyClaim"
+                           formControlName="warrantyClaim"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_submitForWarranty">Submit For Warranty</label>
+                    <input type="text" class="form-control" name="submitForWarranty" id="field_submitForWarranty"
+                           formControlName="submitForWarranty"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_repairablePart">Repairable Part</label>
+                    <input type="text" class="form-control" name="repairablePart" id="field_repairablePart"
+                           formControlName="repairablePart"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_submitForRepair">Submit For Repair</label>
+                    <input type="text" class="form-control" name="submitForRepair" id="field_submitForRepair"
+                           formControlName="submitForRepair"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_partSourcing">Part Sourcing</label>
+                    <input type="text" class="form-control" name="partSourcing" id="field_partSourcing"
+                           formControlName="partSourcing"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_commentFollowup">Comment Followup</label>
+                    <input type="text" class="form-control" name="commentFollowup" id="field_commentFollowup"
+                           formControlName="commentFollowup"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_followupComplete">Followup Complete</label>
+                    <input type="text" class="form-control" name="followupComplete" id="field_followupComplete"
+                           formControlName="followupComplete"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" for="field_user">User</label>
+                    <select class="form-control" id="field_user" name="user" formControlName="user">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="userOption.id === editForm.get('user')!.value?.id ? editForm.get('user')!.value : userOption" *ngFor="let userOption of users; trackBy: trackById">{{ userOption.login }}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary" (click)="previousState()">
+                    <fa-icon icon="ban"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon icon="save"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

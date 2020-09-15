@@ -1,0 +1,253 @@
+{
+  "name": "InventoryAnalysis",
+  "fields": [
+    {
+      "fieldName": "detailOrg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountingDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "trxWeek",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxTyp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costGroup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "toolId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stationFamily",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxQty",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxUom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "unitCost",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountedAmt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partDescr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "naturalAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vendorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "supplierClassification",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glLineDescr",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summaryOrg",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenterId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "costCenter",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "summaryAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentAccount",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orgCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lotNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poItemCat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "moLineNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "poNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "poLineNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeBatchName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "jeLineNo",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trxAcc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxNaturalAcc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "glAcc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "enteredAmt",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "period",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trxId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "uniqueId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "entityReview",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partLifetime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partFixedProblem",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "returnToStores",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "repeatFail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "warrantyClaim",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "submitForWarranty",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "repairablePart",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "submitForRepair",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "partSourcing",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "commentFollowup",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "followupComplete",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "inventoryAnalysis",
+      "relationshipName": "user",
+      "otherEntityField": "login"
+    }
+  ],
+  "changelogDate": "20200915190016",
+  "entityTableName": "inventory_analysis",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
