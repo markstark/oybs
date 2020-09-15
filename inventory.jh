@@ -1,4 +1,4 @@
- entity InventoryActivity(INVENTORY_ACTIVITY){
+ entity InventoryActivity{
 	vendorName String,
 	cAccountKeyDay String,
 	trxDay String,
